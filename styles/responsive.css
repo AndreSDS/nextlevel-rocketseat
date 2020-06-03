@@ -1,0 +1,31 @@
+/*media querys*/
+@media (max-width: 900px){
+    #page-home{
+        background-position-x: 70vw;
+    }
+    #page-home .container{
+        align-items: center;
+        text-align: center;
+    }
+    #page-home .container header a{
+        position: absolute;
+        bottom: 48px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    #page-home .container main{
+        align-items: center;
+    }
+}
+
+@media (min-width: 1440px){
+    #page-home{
+        background-position-x: 40vw;
+    }
+}
+
+@media (min-width: 760px){
+    #page-home{
+        background-position-y: 160px;
+    }
+}
