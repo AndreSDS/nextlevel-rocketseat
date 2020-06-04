@@ -23,17 +23,50 @@ window.addEventListener("DOMContentLoaded", (event) => {
 
     const url = `https://servicodados.ibge.gov.br/api/v1/localidades/estados/${ufValue}/municipios`;
 
+    citySelect.innerHTML = '<option value>Selecione a Cidade</option>';
+    citySelect.disabled = true;
+
     fetch(url)
       .then((res) => res.json())
       .then((cities) => {
-        citySelect.disabled = false;
         for (const city of cities) {
-          citySelect.innerHTML += `<option value="${city.id}">${city.nome}</option>`;
+          citySelect.innerHTML += `<option value="${city.nome}">${city.nome}</option>`;
         }
+        citySelect.disabled = false;
       });
   }
 
   document
     .querySelector("select[name=uf]")
     .addEventListener("change", getCities);
+
+  //Items de coleta
+  const itemsToCollect = document.querySelectorAll('.items-grid li');
+
+  let selectedItems = [];
+  const collectedItems = document.querySelector('input[name=items');
+
+  function handleSelectedItem(event){
+    const itemLi = event.target;
+
+    itemLi.classList.toggle('selected');
+
+    const itemId = itemLi.dataset.id;
+
+    const alreadySelected = selectedItems.findIndex(item => item == itemId);
+    
+    if (alreadySelected >= 0) {
+      const filteredItems = selectedItems.filter(item => item != itemId);
+      selectedItems = filteredItems;
+    }else{
+      selectedItems.push(itemId);
+    }
+
+    collectedItems.value = selectedItems;
+  }
+
+  for (const item of itemsToCollect) {
+    item.addEventListener('click', handleSelectedItem);
+  }
+
 });
