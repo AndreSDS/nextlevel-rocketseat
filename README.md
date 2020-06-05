@@ -20,5 +20,5 @@ web, entitulada Ecoleta.
 - [Nunjucks](https://mozilla.github.io/nunjucks/) - Site da documentação.
 - [Nodemon](https://nodemon.io/) - Site da documentação.
 
-#Ecoleta
-(https://raw.githubusercontent.com/AndreSDS/nextlevel-rocketseat/master/prints/home.png)
+# Ecoleta
+(prints/home.jpg)
