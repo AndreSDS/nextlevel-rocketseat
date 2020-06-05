@@ -21,4 +21,5 @@ web, entitulada Ecoleta.
 - [Nodemon](https://nodemon.io/) - Site da documentação.
 
 # Ecoleta
-(home.jpg)
+
+![Print da home page](home.jpg)
