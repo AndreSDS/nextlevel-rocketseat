@@ -21,4 +21,4 @@ web, entitulada Ecoleta.
 - [Nodemon](https://nodemon.io/) - Site da documentação.
 
 # Ecoleta
-(https://github.com/AndreSDS/nextlevel-rocketseat/blob/master/prints/home.png)
+(prints/home.png)
