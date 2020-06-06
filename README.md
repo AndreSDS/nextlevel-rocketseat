@@ -19,6 +19,7 @@ web, entitulada Ecoleta.
 - [Express](https://expressjs.com/) - Site da documentação.
 - [Nunjucks](https://mozilla.github.io/nunjucks/) - Site da documentação.
 - [Nodemon](https://nodemon.io/) - Site da documentação.
+- [Sqlite3](https://github.com/mapbox/node-sqlite3/wiki) - Saiba mais.
 
 # Ecoleta
 
