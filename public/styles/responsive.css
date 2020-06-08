@@ -1,8 +1,14 @@
 /*media querys*/
+/*screens until 450px*/
 @media (max-width: 450px) {
+  #page-home {
+    background-image: none;
+  }
   #page-home .container {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    text-align: center;
     width: 100vw;
     padding: 1rem;
   }
@@ -16,28 +22,34 @@
     transform: unset;
     margin: 26px 0;
   }
+  #page-home .container main {
+    align-items: center;
+  }
+  #page-home .container main h1 {
+    font-size: 2.7em;
+  }
+  #page-home main a.search strong {
+    font-size: 12px;
+  }
+  #page-home main a {
+    margin-bottom: 48px;
+  }
   #page-search-results .cards {
     grid-template-columns: 1fr;
   }
 }
-@media (max-width: 900px) {
-  #page-home {
-    background-position-x: 70vw;
-  }
-  #page-home .container {
-    align-items: center;
-    text-align: center;
+
+/*screens starting 451px until 900px*/
+@media (min-width: 451px) and (max-width: 900px) {
+  #page-home header {
+    flex-direction: column;
   }
   #page-home .container header a {
-    position: absolute;
-    bottom: 48px;
-    left: 50%;
-    transform: translateX(-50%);
+    margin: 26px 0;
   }
   #page-home .container main {
     align-items: center;
   }
-
   #page-create-point .field-group {
     flex-direction: column;
   }
